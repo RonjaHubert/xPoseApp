@@ -17,6 +17,10 @@ class HomeViewController: UIViewController, SideMenuViewControllerDelegate {
     @IBOutlet weak var leadingConstraintSideMenuView: NSLayoutConstraint!
     @IBOutlet weak var trailingConstraintSideBackgroundView: NSLayoutConstraint!
     
+    @IBAction func trainingHiddenButton(_ sender: UIButton) {
+        tabBarController?.selectedIndex = 2
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sideMenuBackgroundView.isHidden = true
@@ -30,7 +34,7 @@ class HomeViewController: UIViewController, SideMenuViewControllerDelegate {
         contentViews.forEach { view in
             view.layer.cornerRadius = 20
             view.clipsToBounds = false
-            view.layer.shadowColor = UIColor.gray.cgColor
+            view.layer.shadowColor = UIColor(named: "xPose Shadow Color")?.cgColor
             view.layer.shadowOpacity = 0.3
             view.layer.shadowOffset = .init(width: .zero, height: 6.5)
             view.layer.shadowRadius = 10
@@ -41,7 +45,7 @@ class HomeViewController: UIViewController, SideMenuViewControllerDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "sideMenuSegue") {
-            if let controller = segue.destination as? SideMenuViewController {
+            if let controller = segue.destination as? SideMenuViewController {  // SideMenuButton destination is a NavigationController embedding a SideMenuViewController
                 self.sideMenuViewController = controller
                 self.sideMenuViewController?.delegate = self
             }

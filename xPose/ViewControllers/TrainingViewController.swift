@@ -11,6 +11,15 @@ class TrainingViewController: UIViewController {
     
     @IBOutlet var contentViews: [UIView]!
     
+    // delete if dark mode button is removed
+    @IBAction func darkModePressed(_ sender: UIButton) {
+        if(overrideUserInterfaceStyle == .dark) {
+            overrideUserInterfaceStyle = .light
+        } else if(overrideUserInterfaceStyle == .light){
+            overrideUserInterfaceStyle = .light
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,7 +28,7 @@ class TrainingViewController: UIViewController {
         contentViews.forEach { view in
             view.layer.cornerRadius = 20
             view.clipsToBounds = false
-            view.layer.shadowColor = UIColor.gray.cgColor
+            view.layer.shadowColor = UIColor(named: "xPose Shadow Color")?.cgColor
             view.layer.shadowOpacity = 0.3
             view.layer.shadowOffset = .init(width: .zero, height: 6.5)
             view.layer.shadowRadius = 10

@@ -24,7 +24,7 @@ class ARController: UIViewController, ARSessionDelegate {
             super.viewWillAppear(animated)
             
             guard ARBodyTrackingConfiguration.isSupported else {
-                fatalError("This feature is only supported on devices with an A12 chip")
+                fatalError("A device with A12 chip is required")
             }
 
             let configuration = ARBodyTrackingConfiguration()
@@ -94,7 +94,7 @@ class ARController: UIViewController, ARSessionDelegate {
                         nodeToUpdate.position = position
                     } else {
                         
-                        //
+                        // create asset
                         let sphereGeometry = SCNSphere(radius: 0.02)
                         sphereGeometry.isGeodesic = true
                         sphereGeometry.firstMaterial?.diffuse.contents = UIColor.green

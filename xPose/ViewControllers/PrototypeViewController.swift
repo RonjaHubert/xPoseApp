@@ -5,6 +5,8 @@
 //  Created by Xavier Welscher on 09.12.21.
 //
 
+// legacy code - used for the first view controller which contained the side menu
+
 import UIKit
 
 class PrototypeViewController: UIViewController, SideMenuViewControllerDelegate {

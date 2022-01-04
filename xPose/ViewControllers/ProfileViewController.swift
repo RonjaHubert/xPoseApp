@@ -19,7 +19,7 @@ class ProfileViewController: UIViewController {
         
         contentView.layer.cornerRadius = 20
         contentView.clipsToBounds = false
-        contentView.layer.shadowColor = UIColor.gray.cgColor
+        contentView.layer.shadowColor = UIColor(named: "xPose Shadow Color")?.cgColor
         contentView.layer.shadowOpacity = 0.3
         contentView.layer.shadowOffset = .init(width: .zero, height: 6.5)
         contentView.layer.shadowRadius = 10

@@ -9,7 +9,7 @@ import Photos
 import PhotosUI
 import UIKit
 
-class CameraViewController: UIViewController, PHPickerViewControllerDelegate {
+class PhotoPickerController: UIViewController, PHPickerViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()

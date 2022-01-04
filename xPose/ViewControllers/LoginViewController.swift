@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
         // set Content View Attributes
         contentView.layer.cornerRadius = 20
         contentView.clipsToBounds = false
-        contentView.layer.shadowColor = UIColor.gray.cgColor
+        contentView.layer.shadowColor = UIColor(named: "xPose Shadow Color")?.cgColor
         contentView.layer.shadowOpacity = 0.3
         contentView.layer.shadowOffset = .init(width: .zero, height: 6.5)
         contentView.layer.shadowRadius = 10
@@ -53,6 +53,7 @@ class LoginViewController: UIViewController {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: ((passwordText.frame.height) * 0.7), height: ((passwordText.frame.height) * 0.7)))
         button.setImage(UIImage(systemName: "eye.slash"), for: .normal)
         //button.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 3)
+        button.tintColor = UIColor(named: "xPose Tint Color")
         button.addTarget(self, action: #selector(togglePassword), for: .touchUpInside)
         passwordText.rightViewMode = .always
         passwordText.rightView = button

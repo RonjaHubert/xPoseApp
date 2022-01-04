@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N7g-zH-A5I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hod-zI-rCL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,6 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="xPose Tint Color"/>
                     </tabBar>
                     <connections>
                         <segue destination="jRr-V0-cY6" kind="relationship" relationship="viewControllers" id="c2h-5r-v9L"/>
@@ -50,15 +52,15 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gid-8O-G8a">
                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="150"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3TO-Ab-i2B">
                                                         <rect key="frame" x="128" y="0.0" width="118" height="150"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTs-eN-joR">
                                                         <rect key="frame" x="256" y="0.0" width="118" height="150"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
@@ -67,14 +69,14 @@
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fH-FV-lcN">
                                                 <rect key="frame" x="0.0" y="184" width="374" height="200"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="VJr-e8-3UE"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfr-8U-iDk">
                                                 <rect key="frame" x="0.0" y="418" width="374" height="300"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="YbP-c7-DXP"/>
                                                 </constraints>
@@ -82,7 +84,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="backgroundColor" name="xPose Background Color"/>
                                 <constraints>
                                     <constraint firstItem="h0y-G5-Irq" firstAttribute="leading" secondItem="LvK-z4-GBj" secondAttribute="leading" constant="20" id="YfJ-fa-4e7"/>
                                     <constraint firstAttribute="bottom" secondItem="h0y-G5-Irq" secondAttribute="bottom" constant="70" id="jVw-TO-BT3"/>
@@ -92,7 +94,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HXY-Do-BiB"/>
-                        <color key="backgroundColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="xPose Header Color"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="LvK-z4-GBj" secondAttribute="bottom" id="1OP-3B-mHf"/>
                             <constraint firstItem="LvK-z4-GBj" firstAttribute="trailing" secondItem="HXY-Do-BiB" secondAttribute="trailing" id="F6e-Rc-MCT"/>
@@ -100,7 +102,9 @@
                             <constraint firstItem="LvK-z4-GBj" firstAttribute="leading" secondItem="HXY-Do-BiB" secondAttribute="leading" id="ohX-VW-imP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Statistik" id="lwP-OW-Zrh"/>
+                    <navigationItem key="navigationItem" title="Statistik" id="lwP-OW-Zrh">
+                        <barButtonItem key="backBarButtonItem" title="Übersicht" id="KbJ-FC-hRK"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="tn7-SR-emc" kind="show" id="Dvu-Wj-ucK"/>
                     </connections>
@@ -109,10 +113,9 @@
             </objects>
             <point key="canvasLocation" x="-455.07246376811599" y="68.973214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Statistik-->
         <scene sceneID="QGk-mz-FWX">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h8o-Rn-9vX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="tn7-SR-emc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l1d-52-oBJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -120,11 +123,11 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hj-mi-5Xg">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="xPose Background Color"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5xu-kQ-DrR"/>
-                        <color key="backgroundColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="xPose Header Color"/>
                         <constraints>
                             <constraint firstItem="9hj-mi-5Xg" firstAttribute="top" secondItem="5xu-kQ-DrR" secondAttribute="top" id="11U-22-oLG"/>
                             <constraint firstItem="5xu-kQ-DrR" firstAttribute="trailing" secondItem="9hj-mi-5Xg" secondAttribute="trailing" id="82b-R6-yAR"/>
@@ -132,27 +135,30 @@
                             <constraint firstItem="9hj-mi-5Xg" firstAttribute="leading" secondItem="5xu-kQ-DrR" secondAttribute="leading" id="aXa-bf-mVm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="BRX-wn-sVa"/>
+                    <navigationItem key="navigationItem" title="Statistik" id="BRX-wn-sVa">
+                        <barButtonItem key="backBarButtonItem" title="Graphen" id="m46-We-1fP"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="XDF-Wk-OHZ" kind="show" id="CTw-oh-K79"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8o-Rn-9vX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="508.69565217391306" y="68.973214285714278"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1F5-rT-Xap">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MMJ-0S-2hZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="XDF-Wk-OHZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Yg-JB-39G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="MtR-KI-69p"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="xPose Background Color"/>
                     </view>
                     <navigationItem key="navigationItem" id="XF0-0k-Q2W"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMJ-0S-2hZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1226.0869565217392" y="73.660714285714278"/>
         </scene>
@@ -164,14 +170,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3d6-8z-ecO">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.94893056149999999" green="0.94906717539999996" blue="0.96936076879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" name="xPose Navigation Items Color"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="xPose Header Font Color"/>
                             <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="xPose Header Font Color"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -192,7 +198,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYd-LE-u2X" userLabel="HeaderBackgroundView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
-                                <color key="backgroundColor" red="0.0" green="0.7803921568627451" blue="0.39261317746261842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="xPose Header Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="WFb-BL-uH8"/>
                                 </constraints>
@@ -212,24 +218,27 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stimmung heute festlegen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gE-Qh-zSU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="35"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" name="xPose Font Color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SX8-DN-Kjq">
                                                                 <rect key="frame" x="-2" y="35" width="338" height="36"/>
-                                                                <color key="tintColor" red="0.06087466045" green="0.78039215689999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" name="xPose Tint Color"/>
                                                             </slider>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="4Sx-3I-pVu">
                                                                 <rect key="frame" x="0.0" y="70" width="334" height="35"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face.smiling" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="umN-qG-JJg">
                                                                         <rect key="frame" x="0.0" y="0.5" width="20" height="34"/>
+                                                                        <color key="tintColor" name="xPose Tint Color"/>
                                                                     </imageView>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face.smiling" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="AZF-r9-kb6">
                                                                         <rect key="frame" x="157" y="0.5" width="20" height="34"/>
+                                                                        <color key="tintColor" name="xPose Tint Color"/>
                                                                     </imageView>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face.smiling" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kc1-c4-e47">
                                                                         <rect key="frame" x="314" y="0.5" width="20" height="34"/>
+                                                                        <color key="tintColor" name="xPose Tint Color"/>
                                                                     </imageView>
                                                                 </subviews>
                                                             </stackView>
@@ -240,8 +249,8 @@
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Erweitert">
-                                                                    <color key="baseForegroundColor" systemColor="systemGray2Color"/>
-                                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" name="xPose Secondary Font Color"/>
+                                                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <segue destination="Pcg-2r-4RU" kind="show" id="aJD-pV-NJh"/>
@@ -250,7 +259,7 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="BfU-kU-IrA"/>
                                                     <constraint firstAttribute="bottom" secondItem="I3g-sZ-fxb" secondAttribute="bottom" id="Exv-KP-CgG"/>
@@ -265,19 +274,19 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBZ-H3-jrN">
                                                         <rect key="frame" x="0.0" y="35.5" width="374" height="184.5"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title=""/>
                                                         <connections>
-                                                            <segue destination="aP1-92-tjp" kind="show" id="Vf2-QY-wtY"/>
+                                                            <action selector="trainingHiddenButton:" destination="c17-AI-7zX" eventType="touchUpInside" id="JUX-MB-Uyj"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trainingsaufgaben für heute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzZ-JE-a2x">
                                                         <rect key="frame" x="20" y="10" width="334" height="25.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="xPose Font Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                                 <constraints>
                                                     <constraint firstItem="dzZ-JE-a2x" firstAttribute="top" secondItem="Agm-JE-tLt" secondAttribute="top" constant="10" id="4fh-Zy-0M7"/>
                                                     <constraint firstAttribute="bottom" secondItem="QBZ-H3-jrN" secondAttribute="bottom" id="9oH-K2-n8r"/>
@@ -302,7 +311,7 @@
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="Ssk-Hd-iVN"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" name="xPose Font Color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fS-wK-zki">
@@ -314,17 +323,16 @@
                                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="58" id="nkl-en-CJl"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                        <color key="textColor" red="0.0" green="0.78039215689999997" blue="0.39261317750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" name="xPose Tint Color"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bpm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eze-0g-lTC">
                                                                         <rect key="frame" x="58" y="0.0" width="20" height="50"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" systemColor="systemGray4Color"/>
+                                                                        <color key="textColor" name="xPose Tertiary Font Color"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="RfO-QA-5NN" firstAttribute="top" secondItem="6fS-wK-zki" secondAttribute="top" id="AsR-Sr-wZD"/>
                                                                     <constraint firstAttribute="height" constant="50" id="D0L-gu-W6T"/>
@@ -338,7 +346,7 @@
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bolt.heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aNS-2H-sIz">
                                                                 <rect key="frame" x="3" y="4.5" width="28" height="28"/>
-                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <color key="tintColor" name="xPose Font Color"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="28" id="1tk-S3-rps"/>
                                                                     <constraint firstAttribute="height" constant="30.5" id="3EZ-5t-Bxa"/>
@@ -351,11 +359,11 @@
                                                                     <constraint firstAttribute="height" constant="15" id="tjF-Qx-SyU"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                <color key="textColor" systemColor="systemGray4Color"/>
+                                                                <color key="textColor" name="xPose Tertiary Font Color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                                         <constraints>
                                                             <constraint firstItem="6fS-wK-zki" firstAttribute="centerX" secondItem="4r5-Jl-7Vd" secondAttribute="centerX" id="A3X-P0-EfL"/>
                                                             <constraint firstItem="y0W-Ut-ibC" firstAttribute="leading" secondItem="aNS-2H-sIz" secondAttribute="trailing" constant="5" id="L8S-5Z-haN"/>
@@ -379,12 +387,12 @@
                                                                     <constraint firstAttribute="height" constant="21" id="lk2-vX-QZB"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" name="xPose Font Color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3e6-yW-xvJ">
                                                                 <rect key="frame" x="3" y="3.5" width="25" height="25"/>
-                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <color key="tintColor" name="xPose Font Color"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="26" id="ACa-uN-23s"/>
                                                                     <constraint firstAttribute="width" constant="25" id="Yih-P1-euE"/>
@@ -397,7 +405,7 @@
                                                                     <constraint firstAttribute="height" constant="15" id="KJ1-cz-stU"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                <color key="textColor" systemColor="systemGray4Color"/>
+                                                                <color key="textColor" name="xPose Tertiary Font Color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5z7-8p-tvW">
@@ -409,13 +417,13 @@
                                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="58" id="Icz-R8-u7C"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                        <color key="textColor" red="0.0" green="0.78039215689999997" blue="0.39261317750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" name="xPose Tint Color"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mmHg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMZ-cJ-jbO">
                                                                         <rect key="frame" x="58" y="0.0" width="40" height="45"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" systemColor="systemGray4Color"/>
+                                                                        <color key="textColor" name="xPose Tertiary Font Color"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -432,7 +440,7 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                                         <constraints>
                                                             <constraint firstItem="5z7-8p-tvW" firstAttribute="centerY" secondItem="Upv-b7-yMM" secondAttribute="centerY" constant="10" id="D1T-xy-FXA"/>
                                                             <constraint firstItem="3e6-yW-xvJ" firstAttribute="leading" secondItem="Upv-b7-yMM" secondAttribute="leading" constant="3" id="Odd-3U-1ep"/>
@@ -455,12 +463,12 @@
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="U4K-EN-UMq"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" name="xPose Font Color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bolt" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ihc-M6-tlD">
                                                                 <rect key="frame" x="3" y="5" width="25" height="25"/>
-                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <color key="tintColor" name="xPose Font Color"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="25" id="4D8-hP-Zn9"/>
                                                                     <constraint firstAttribute="height" constant="23.5" id="Nyx-aT-Efr"/>
@@ -473,7 +481,7 @@
                                                                     <constraint firstAttribute="height" constant="36" id="WgQ-aD-Vxj"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                <color key="textColor" red="0.0" green="0.78039215689999997" blue="0.39261317750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" name="xPose Tint Color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoa-Fi-zj8">
@@ -483,11 +491,11 @@
                                                                     <constraint firstAttribute="height" constant="15" id="i8w-sM-7Vl"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                <color key="textColor" systemColor="systemGray4Color"/>
+                                                                <color key="textColor" name="xPose Tertiary Font Color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                                         <constraints>
                                                             <constraint firstItem="FW9-wo-rvE" firstAttribute="centerY" secondItem="hwI-Fb-O5e" secondAttribute="centerY" constant="10" id="4vM-Pv-qja"/>
                                                             <constraint firstItem="FW9-wo-rvE" firstAttribute="centerX" secondItem="hwI-Fb-O5e" secondAttribute="centerX" id="LCN-KZ-uJm"/>
@@ -539,7 +547,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lpJ-Sr-ZTy"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" name="xPose Background Color"/>
                         <constraints>
                             <constraint firstItem="lpJ-Sr-ZTy" firstAttribute="bottom" secondItem="0yP-c3-lNj" secondAttribute="bottom" id="2YY-Yh-mqu"/>
                             <constraint firstAttribute="trailing" secondItem="TNd-1e-qcN" secondAttribute="trailing" constant="414" id="Kkz-1j-RzE"/>
@@ -558,6 +566,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Homepage" id="Ldi-hd-L22">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="tcz-YA-9tZ"/>
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="Xey-bA-n2z">
                             <imageReference key="image" image="line.3.horizontal" catalog="system" renderingMode="hierarchical-single">
                                 <hierarchicalColors>
@@ -621,12 +630,12 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0G-me-upt">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
-                                <color key="backgroundColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="xPose Header Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="Men-04-P7d"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-1577909_1280" translatesAutoresizingMaskIntoConstraints="NO" id="sxu-cC-hCR" customClass="Profil">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="sxu-cC-hCR" customClass="Profil">
                                 <rect key="frame" x="87" y="136" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="RiD-al-9f8"/>
@@ -641,7 +650,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Profilbild ändern">
-                                    <color key="baseForegroundColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseForegroundColor" name="xPose Tint Color"/>
                                 </buttonConfiguration>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFK-fn-0kK">
@@ -656,13 +665,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benutzername:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HA-85-5eT">
                                                         <rect key="frame" x="0.0" y="0.0" width="115.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="xPose Font Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Muster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rF-3B-dYD">
                                                         <rect key="frame" x="204.5" y="0.0" width="89.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" name="xPose Tint Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -673,13 +682,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXr-B3-g4p">
                                                         <rect key="frame" x="0.0" y="0.0" width="53" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="xPose Font Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="maxmuster@muster.de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kff-8b-iy5">
                                                         <rect key="frame" x="118" y="0.0" width="176" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" name="xPose Tint Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -690,13 +699,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benutzername:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxx-Dt-p7C">
                                                         <rect key="frame" x="0.0" y="0.0" width="115.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="xPose Font Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MaxMuster" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjl-5l-6fF">
                                                         <rect key="frame" x="208.5" y="0.0" width="85.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" name="xPose Tint Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -707,13 +716,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Größe:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsT-Bc-phY">
                                                         <rect key="frame" x="0.0" y="0.0" width="52" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="xPose Font Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,85 cm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpf-vc-JjP">
                                                         <rect key="frame" x="234.5" y="0.0" width="59.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" name="xPose Tint Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -724,13 +733,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gewicht:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tap-qV-e6f">
                                                         <rect key="frame" x="0.0" y="0.0" width="67.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="xPose Font Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="85 kg" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2h6-ja-E8d">
                                                         <rect key="frame" x="250.5" y="0.0" width="43.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" name="xPose Tint Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -749,7 +758,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rSd-z6-gD8"/>
-                        <color key="backgroundColor" red="0.94893056149999999" green="0.94906717539999996" blue="0.96936076879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="xPose Background Color"/>
                         <constraints>
                             <constraint firstItem="sFK-fn-0kK" firstAttribute="top" secondItem="cfK-VF-daO" secondAttribute="bottom" constant="40" id="JJz-TZ-FjD"/>
                             <constraint firstItem="I0G-me-upt" firstAttribute="top" secondItem="OXJ-KD-5EZ" secondAttribute="top" id="Kya-9g-JhF"/>
@@ -776,7 +785,7 @@
         <!--Camera-->
         <scene sceneID="gcv-FD-3vy">
             <objects>
-                <viewController title="Camera" id="LkG-sg-9lF" customClass="CameraViewController" customModule="xPose" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Camera" id="LkG-sg-9lF" customClass="PhotoPickerController" customModule="xPose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lKv-UN-Eej">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -787,7 +796,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Baj-vC-sVf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="509" y="706"/>
+            <point key="canvasLocation" x="1358" y="820"/>
         </scene>
         <!--Stimmung-->
         <scene sceneID="sf9-x6-C1T">
@@ -799,7 +808,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qR-lc-ZUK">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
-                                <color key="backgroundColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="xPose Header Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="NnR-4c-hq3"/>
                                 </constraints>
@@ -812,7 +821,7 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ohh-9E-8Xg">
                                                 <rect key="frame" x="18" y="55" width="318" height="31"/>
-                                                <color key="tintColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" name="xPose Tint Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="si4-x9-8yr"/>
                                                 </constraints>
@@ -823,7 +832,7 @@
                                                     <constraint firstAttribute="height" constant="21" id="9zO-KJ-po6"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="xPose Title Color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -843,7 +852,7 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BAX-ID-lqQ">
                                                 <rect key="frame" x="18" y="55" width="318" height="31"/>
-                                                <color key="tintColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" name="xPose Tint Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Rfn-hC-Ihg"/>
                                                 </constraints>
@@ -854,7 +863,7 @@
                                                     <constraint firstAttribute="height" constant="21" id="Dkc-9B-AvG"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="xPose Title Color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -874,7 +883,7 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yqT-5K-kFT">
                                                 <rect key="frame" x="8" y="55" width="338" height="31"/>
-                                                <color key="tintColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" name="xPose Tint Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="yrZ-6x-8vD"/>
                                                 </constraints>
@@ -885,7 +894,7 @@
                                                     <constraint firstAttribute="height" constant="21" id="Wbd-3P-zqr"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="xPose Title Color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -907,17 +916,18 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LC6-R0-gKU">
                                 <rect key="frame" x="163" y="676" width="88" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="JF2-vs-x8i"/>
                                 </constraints>
-                                <color key="tintColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="speichern"/>
+                                <buttonConfiguration key="configuration" style="filled" title="speichern">
+                                    <color key="baseForegroundColor" name="xPose Button Font Color"/>
+                                    <color key="baseBackgroundColor" name="xPose Button Color"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9hs-MF-UyS"/>
-                        <color key="backgroundColor" red="0.9488552213" green="0.94870942830000005" blue="0.96930819749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="xPose Background Color"/>
                         <constraints>
                             <constraint firstItem="LC6-R0-gKU" firstAttribute="centerX" secondItem="YMv-Ui-u0s" secondAttribute="centerX" id="AL2-aa-CgC"/>
                             <constraint firstItem="LC6-R0-gKU" firstAttribute="top" secondItem="JB5-Ch-NxG" secondAttribute="bottom" constant="50" id="C7I-0k-rMq"/>
@@ -949,7 +959,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOk-aF-K91">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
-                                <color key="backgroundColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="xPose Header Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="P6D-jk-OpP"/>
                                 </constraints>
@@ -960,7 +970,7 @@
                                     <constraint firstAttribute="height" constant="30" id="0si-H3-lvd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="xPose Font Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fkC-tQ-Bhg">
@@ -991,7 +1001,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                         <constraints>
                                             <constraint firstItem="p00-3d-gml" firstAttribute="centerY" secondItem="6yE-Kb-C7U" secondAttribute="centerY" id="gTz-MH-4xp"/>
                                             <constraint firstItem="p00-3d-gml" firstAttribute="centerX" secondItem="6yE-Kb-C7U" secondAttribute="centerX" id="hf2-Wi-jYq"/>
@@ -999,17 +1009,35 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0C-21-Eqb">
                                         <rect key="frame" x="0.0" y="179" width="314" height="149"/>
-                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8c-EF-Ykt">
+                                                <rect key="frame" x="139.5" y="57" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="6nd-ay-DbS"/>
+                                                    <constraint firstAttribute="width" constant="35" id="WOd-GU-zyt"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="moon.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="darkModePressed:" destination="aP1-92-tjp" eventType="touchUpInside" id="MQ0-Id-kgl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="xPose Secondary Background Color"/>
+                                        <constraints>
+                                            <constraint firstItem="F8c-EF-Ykt" firstAttribute="centerY" secondItem="l0C-21-Eqb" secondAttribute="centerY" id="KTF-Kd-18c"/>
+                                            <constraint firstItem="F8c-EF-Ykt" firstAttribute="centerX" secondItem="l0C-21-Eqb" secondAttribute="centerX" id="ppY-zi-7j2"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezY-Df-pxY">
                                         <rect key="frame" x="0.0" y="358" width="314" height="149"/>
-                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                     </view>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jxo-Mu-VDq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="xPose Background Color"/>
                         <constraints>
                             <constraint firstItem="Jxo-Mu-VDq" firstAttribute="bottom" secondItem="fkC-tQ-Bhg" secondAttribute="bottom" constant="100" id="222-Fr-2RJ"/>
                             <constraint firstItem="Jxo-Mu-VDq" firstAttribute="trailing" secondItem="2Jr-VP-irB" secondAttribute="trailing" constant="30" id="2ds-vo-StE"/>
@@ -1044,11 +1072,11 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lol-Fp-zAs">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="xPose Background Color"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bni-yy-GEl"/>
-                        <color key="backgroundColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="xPose Header Color"/>
                         <constraints>
                             <constraint firstItem="lol-Fp-zAs" firstAttribute="leading" secondItem="Bni-yy-GEl" secondAttribute="leading" id="EkA-Y6-zEK"/>
                             <constraint firstItem="lol-Fp-zAs" firstAttribute="trailing" secondItem="Bni-yy-GEl" secondAttribute="trailing" id="iZJ-vV-bFd"/>
@@ -1090,23 +1118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jlv-8E-Fpg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="509" y="1369"/>
-        </scene>
-        <!--Blog-->
-        <scene sceneID="Url-D5-KMp">
-            <objects>
-                <viewController title="Blog" id="7Ge-fx-nqi" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mNl-vk-BW9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="wue-AB-6P8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="HDL-Qk-20A"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LFS-vR-fKG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-455" y="1981"/>
+            <point key="canvasLocation" x="509" y="820"/>
         </scene>
         <!--Blog-->
         <scene sceneID="PCR-Ol-UZA">
@@ -1117,15 +1129,39 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ihu-eF-BGV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="xPose Header Font Color"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="7Ge-fx-nqi" kind="relationship" relationship="rootViewController" id="JIE-Au-4j6"/>
+                        <segue destination="kfk-Nn-Jzc" kind="relationship" relationship="rootViewController" id="pkx-IR-4Gx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfs-Yi-fiM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1207.2463768115942" y="1980.8035714285713"/>
+        </scene>
+        <!--Blog-->
+        <scene sceneID="dxn-bf-Swy">
+            <objects>
+                <tableViewController id="kfk-Nn-Jzc" customClass="BlogTableViewController" customModule="xPose" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="YnU-Dj-3Sa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" name="xPose Background Color"/>
+                        <connections>
+                            <outlet property="dataSource" destination="kfk-Nn-Jzc" id="Ncr-sC-wxP"/>
+                            <outlet property="delegate" destination="kfk-Nn-Jzc" id="NSP-BR-bnn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Blog" id="UPJ-dO-172"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZL-wf-djv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455" y="1981"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="kO1-Kj-fKC">
@@ -1136,8 +1172,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fQM-QK-CkT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="xPose Header Font Color"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1158,8 +1195,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pup-17-2AF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="xPose Header Font Color"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1188,11 +1226,11 @@
                                             <constraint firstAttribute="height" constant="50.5" id="3e5-rX-e8H"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="xPose Header Font Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.39261317750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="xPose Header Color"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="P9T-KQ-FZg" secondAttribute="bottom" constant="50" id="0vS-UO-dNu"/>
                                     <constraint firstItem="P9T-KQ-FZg" firstAttribute="leading" secondItem="icw-uc-RoV" secondAttribute="leading" id="3Ba-Z2-JH9"/>
@@ -1208,16 +1246,25 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vorname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3q-0u-RM3">
                                                 <rect key="frame" x="20" y="0.0" width="234" height="34"/>
+                                                <color key="backgroundColor" name="xPose TextField Color"/>
+                                                <color key="tintColor" name="xPose Tint Color"/>
+                                                <color key="textColor" name="xPose Font Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nachname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nh3-fi-oU4">
                                                 <rect key="frame" x="20" y="54" width="234" height="34"/>
+                                                <color key="backgroundColor" name="xPose TextField Color"/>
+                                                <color key="tintColor" name="xPose Tint Color"/>
+                                                <color key="textColor" name="xPose Font Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Geschlecht" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dz-Hp-lYD">
                                                 <rect key="frame" x="20" y="108" width="234" height="34"/>
+                                                <color key="backgroundColor" name="xPose TextField Color"/>
+                                                <color key="tintColor" name="xPose Tint Color"/>
+                                                <color key="textColor" name="xPose Font Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1226,16 +1273,25 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdi-iV-Qa5">
                                                         <rect key="frame" x="0.0" y="0.0" width="71.5" height="34"/>
+                                                        <color key="backgroundColor" name="xPose TextField Color"/>
+                                                        <color key="tintColor" name="xPose Tint Color"/>
+                                                        <color key="textColor" name="xPose Font Color"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYc-OB-ENV">
                                                         <rect key="frame" x="81.5" y="0.0" width="71" height="34"/>
+                                                        <color key="backgroundColor" name="xPose TextField Color"/>
+                                                        <color key="tintColor" name="xPose Tint Color"/>
+                                                        <color key="textColor" name="xPose Font Color"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TpY-WS-ULl">
                                                         <rect key="frame" x="162.5" y="0.0" width="71.5" height="34"/>
+                                                        <color key="backgroundColor" name="xPose TextField Color"/>
+                                                        <color key="tintColor" name="xPose Tint Color"/>
+                                                        <color key="textColor" name="xPose Font Color"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -1243,26 +1299,32 @@
                                             </stackView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MB5-rh-Jb2">
                                                 <rect key="frame" x="20" y="216" width="234" height="34"/>
+                                                <color key="backgroundColor" name="xPose TextField Color"/>
+                                                <color key="tintColor" name="xPose Tint Color"/>
+                                                <color key="textColor" name="xPose Font Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="05P-WJ-uae">
                                                 <rect key="frame" x="20" y="270" width="234" height="34"/>
+                                                <color key="backgroundColor" name="xPose TextField Color"/>
+                                                <color key="tintColor" name="xPose Tint Color"/>
+                                                <color key="textColor" name="xPose Font Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXm-L3-9qG">
                                                 <rect key="frame" x="86" y="324" width="102" height="34"/>
-                                                <color key="backgroundColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="kJF-21-6KO"/>
                                                 </constraints>
-                                                <color key="tintColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Registrieren"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Registrieren">
+                                                    <color key="baseForegroundColor" name="xPose Button Font Color"/>
+                                                    <color key="baseBackgroundColor" name="xPose Button Color"/>
+                                                </buttonConfiguration>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="nh3-fi-oU4" firstAttribute="leading" secondItem="lQ7-fv-hiR" secondAttribute="leading" constant="20" id="1wo-fk-dYg"/>
                                             <constraint firstAttribute="trailing" secondItem="4dz-Hp-lYD" secondAttribute="trailing" constant="20" id="LPA-lk-I5I"/>
@@ -1279,7 +1341,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                 <constraints>
                                     <constraint firstItem="lQ7-fv-hiR" firstAttribute="leading" secondItem="gcT-NV-4Sb" secondAttribute="leading" constant="30" id="7bn-gN-GyK"/>
                                     <constraint firstAttribute="trailing" secondItem="lQ7-fv-hiR" secondAttribute="trailing" constant="30" id="GMM-4y-cs6"/>
@@ -1293,16 +1355,17 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="eMs-fl-FOb"/>
                                     <constraint firstAttribute="height" constant="31" id="rQg-tK-Mm0"/>
                                 </constraints>
-                                <color key="tintColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="zurück zum Log-In"/>
+                                <buttonConfiguration key="configuration" style="plain" title="zurück zum Log-In">
+                                    <color key="baseForegroundColor" name="xPose Tint Color"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="Hod-zI-rCL" kind="show" id="bsS-js-DSr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TVd-db-lcn"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" name="xPose Background Color"/>
                         <constraints>
                             <constraint firstItem="icw-uc-RoV" firstAttribute="leading" secondItem="TVd-db-lcn" secondAttribute="leading" id="1YY-Uc-h6k"/>
                             <constraint firstItem="TVd-db-lcn" firstAttribute="bottom" secondItem="gcT-NV-4Sb" secondAttribute="bottom" constant="80" id="4rd-Df-ROV"/>
@@ -1338,11 +1401,11 @@
                                             <constraint firstAttribute="height" constant="50.5" id="brj-AK-Gwd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="xPose Header Font Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.39261317750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="xPose Header Color"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="g8b-1U-2ze" secondAttribute="bottom" constant="50" id="4DC-uU-Y3f"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="Ijf-De-iQq"/>
@@ -1365,20 +1428,27 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQh-ga-4Rs">
                                                 <rect key="frame" x="30" y="29.5" width="214" height="34"/>
+                                                <color key="backgroundColor" name="xPose TextField Color"/>
+                                                <color key="tintColor" name="xPose Tint Color"/>
+                                                <color key="textColor" name="xPose Font Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2g-dT-9iR">
                                                 <rect key="frame" x="30" y="78.5" width="214" height="34"/>
+                                                <color key="backgroundColor" name="xPose TextField Color"/>
+                                                <color key="tintColor" name="xPose Title Color"/>
+                                                <color key="textColor" name="xPose Font Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRu-Zx-axw">
                                                 <rect key="frame" x="88.5" y="127.5" width="97.5" height="31"/>
-                                                <color key="backgroundColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="tintColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Anmeldung"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Anmeldung">
+                                                    <color key="baseForegroundColor" name="xPose Button Font Color"/>
+                                                    <color key="baseBackgroundColor" name="xPose Button Color"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="checkPlaceholderPassword:" destination="Hod-zI-rCL" eventType="touchUpInside" id="Ejr-xS-8XD"/>
                                                 </connections>
@@ -1392,7 +1462,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="cL6-mY-DKf" secondAttribute="bottom" constant="20" id="CxB-PM-ppQ"/>
                                     <constraint firstAttribute="trailing" secondItem="cL6-mY-DKf" secondAttribute="trailing" constant="20" id="KOs-1X-lmr"/>
@@ -1402,21 +1472,22 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7D-5h-e9B">
                                 <rect key="frame" x="147" y="817" width="120" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="LD9-RL-JPo"/>
                                     <constraint firstAttribute="height" constant="30" id="Msd-6J-r75"/>
                                 </constraints>
-                                <color key="tintColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Registrieren"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Registrieren">
+                                    <color key="baseForegroundColor" name="xPose Button Font Color"/>
+                                    <color key="baseBackgroundColor" name="xPose Button Color"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="EZj-I1-9hq" kind="show" id="36D-a7-J77"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hvH-ag-CBg"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" name="xPose Background Color"/>
                         <constraints>
                             <constraint firstItem="LEg-j0-hZY" firstAttribute="leading" secondItem="hvH-ag-CBg" secondAttribute="leading" constant="50" id="6kT-0r-30z"/>
                             <constraint firstItem="LEg-j0-hZY" firstAttribute="centerY" secondItem="nqJ-uE-TEf" secondAttribute="centerY" id="EFq-lf-nbx"/>
@@ -1451,8 +1522,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="B2h-Ew-rt9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="xPose Navigation Items Color"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.94893056149999999" green="0.94906717539999996" blue="0.96936076879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" name="xPose Header Font Color"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1474,7 +1546,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0H-KL-BMx" userLabel="HeaderBackgroundView">
                                 <rect key="frame" x="0.0" y="0.0" width="280" height="164"/>
-                                <color key="backgroundColor" red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="xPose Header Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="164" id="AbB-05-0hR"/>
                                 </constraints>
@@ -1544,7 +1616,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="AIg-Fi-Kzf" secondAttribute="trailing" id="5Jm-pF-8op"/>
                                     <constraint firstAttribute="trailing" secondItem="36R-3S-RcN" secondAttribute="trailing" id="7k1-6s-vIQ"/>
@@ -1566,7 +1638,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MVA-Oj-tlM"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" name="xPose Background Color"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" relation="lessThanOrEqual" secondItem="Ztp-UG-U0h" secondAttribute="bottom" constant="150" id="8HZ-WO-WHM"/>
                             <constraint firstAttribute="trailing" secondItem="D0H-KL-BMx" secondAttribute="trailing" id="BSu-zN-U67"/>
@@ -1590,54 +1662,85 @@
         <!--Navigation Controller-->
         <scene sceneID="th5-Wb-Nn7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HGh-2m-zlB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MWz-4o-IkP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6tk-RA-2Aw">
                         <rect key="frame" x="0.0" y="44" width="280" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="xPose Header Font Color"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="5nT-aQ-Ma2" kind="relationship" relationship="rootViewController" id="iEA-0o-Zmx"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HGh-2m-zlB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="411.59420289855075" y="-544.41964285714278"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="bsS-js-DSr"/>
-        <segue reference="Vf2-QY-wtY"/>
-    </inferredMetricsTieBreakers>
     <resources>
-        <image name="avatar-1577909_1280" width="1280" height="1280"/>
         <image name="bolt" catalog="system" width="101" height="128"/>
         <image name="bolt.heart" catalog="system" width="128" height="109"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="chart.bar" catalog="system" width="128" height="90"/>
+        <image name="defaultAvatar" width="1280" height="1280"/>
         <image name="drop" catalog="system" width="101" height="128"/>
         <image name="face.smiling" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
         <image name="message" catalog="system" width="128" height="113"/>
+        <image name="moon.fill" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="xPose Background Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Button Color">
+            <color red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Button Font Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Font Color">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Header Color">
+            <color red="0.0" green="0.7803921568627451" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Header Font Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Navigation Items Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Secondary Background Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Secondary Font Color">
+            <color red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Tertiary Font Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose TextField Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Tint Color">
+            <color red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Title Color">
+            <color red="0.0" green="0.7803921568627451" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
