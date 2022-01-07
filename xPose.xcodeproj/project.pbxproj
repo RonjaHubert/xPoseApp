@@ -19,9 +19,12 @@
 		2081A54F2742D7AB003FA955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2081A54E2742D7AB003FA955 /* Assets.xcassets */; };
 		2081A5522742D7AB003FA955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2081A5502742D7AB003FA955 /* LaunchScreen.storyboard */; };
 		209BFDB4277B54B10047B979 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209BFDB3277B54B10047B979 /* LoginViewController.swift */; };
+		20AFB4672785F80900478E11 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AFB4662785F80900478E11 /* Gradient.swift */; };
+		20AFB46A27870A5400478E11 /* TrainingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AFB46827870A5400478E11 /* TrainingTableViewCell.swift */; };
+		20AFB46B27870A5400478E11 /* TrainingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AFB46927870A5400478E11 /* TrainingTableViewCell.xib */; };
 		20C1179B27847F4600CFEAF4 /* BlogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1179A27847F4600CFEAF4 /* BlogTableViewController.swift */; };
-		20C1179E278483C300CFEAF4 /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1179C278483C300CFEAF4 /* customTableViewCell.swift */; };
-		20C1179F278483C300CFEAF4 /* customTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C1179D278483C300CFEAF4 /* customTableViewCell.xib */; };
+		20C1179E278483C300CFEAF4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1179C278483C300CFEAF4 /* CustomTableViewCell.swift */; };
+		20C1179F278483C300CFEAF4 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C1179D278483C300CFEAF4 /* CustomTableViewCell.xib */; };
 		20E140B62781EF720081D0FC /* ARController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E140B52781EF720081D0FC /* ARController.swift */; };
 		20E822EF275A684100A78944 /* PhotoPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E822EE275A684100A78944 /* PhotoPickerController.swift */; };
 /* End PBXBuildFile section */
@@ -41,9 +44,12 @@
 		2081A5512742D7AB003FA955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2081A5532742D7AB003FA955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		209BFDB3277B54B10047B979 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		20AFB4662785F80900478E11 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		20AFB46827870A5400478E11 /* TrainingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTableViewCell.swift; sourceTree = "<group>"; };
+		20AFB46927870A5400478E11 /* TrainingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingTableViewCell.xib; sourceTree = "<group>"; };
 		20C1179A27847F4600CFEAF4 /* BlogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogTableViewController.swift; sourceTree = "<group>"; };
-		20C1179C278483C300CFEAF4 /* customTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
-		20C1179D278483C300CFEAF4 /* customTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customTableViewCell.xib; sourceTree = "<group>"; };
+		20C1179C278483C300CFEAF4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		20C1179D278483C300CFEAF4 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		20E140B52781EF720081D0FC /* ARController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARController.swift; sourceTree = "<group>"; };
 		20E822EE275A684100A78944 /* PhotoPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerController.swift; sourceTree = "<group>"; };
 		20E822F5275B998700A78944 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -104,8 +110,11 @@
 				209BFDB3277B54B10047B979 /* LoginViewController.swift */,
 				20E140B52781EF720081D0FC /* ARController.swift */,
 				20C1179A27847F4600CFEAF4 /* BlogTableViewController.swift */,
-				20C1179C278483C300CFEAF4 /* customTableViewCell.swift */,
-				20C1179D278483C300CFEAF4 /* customTableViewCell.xib */,
+				20AFB4662785F80900478E11 /* Gradient.swift */,
+				20C1179C278483C300CFEAF4 /* CustomTableViewCell.swift */,
+				20C1179D278483C300CFEAF4 /* CustomTableViewCell.xib */,
+				20AFB46827870A5400478E11 /* TrainingTableViewCell.swift */,
+				20AFB46927870A5400478E11 /* TrainingTableViewCell.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -170,7 +179,8 @@
 			files = (
 				2081A5522742D7AB003FA955 /* LaunchScreen.storyboard in Resources */,
 				2081A54F2742D7AB003FA955 /* Assets.xcassets in Resources */,
-				20C1179F278483C300CFEAF4 /* customTableViewCell.xib in Resources */,
+				20C1179F278483C300CFEAF4 /* CustomTableViewCell.xib in Resources */,
+				20AFB46B27870A5400478E11 /* TrainingTableViewCell.xib in Resources */,
 				2081A54D2742D7A6003FA955 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,13 +195,15 @@
 				20E140B62781EF720081D0FC /* ARController.swift in Sources */,
 				209BFDB4277B54B10047B979 /* LoginViewController.swift in Sources */,
 				2017A52D2767D16D001E5A96 /* MoodViewController.swift in Sources */,
+				20AFB4672785F80900478E11 /* Gradient.swift in Sources */,
 				207AD581276257EB00AE8A92 /* HomeViewController.swift in Sources */,
 				20E822EF275A684100A78944 /* PhotoPickerController.swift in Sources */,
 				2017A52527676E62001E5A96 /* TrainingViewController.swift in Sources */,
 				2081A5462742D7A6003FA955 /* AppDelegate.swift in Sources */,
-				20C1179E278483C300CFEAF4 /* customTableViewCell.swift in Sources */,
+				20C1179E278483C300CFEAF4 /* CustomTableViewCell.swift in Sources */,
 				2081A5482742D7A6003FA955 /* SceneDelegate.swift in Sources */,
 				207AD583276259B000AE8A92 /* SideMenuViewController.swift in Sources */,
+				20AFB46A27870A5400478E11 /* TrainingTableViewCell.swift in Sources */,
 				20C1179B27847F4600CFEAF4 /* BlogTableViewController.swift in Sources */,
 				2017A5292767CBBC001E5A96 /* ProfileViewController.swift in Sources */,
 				20682D3C2762B3B400E97223 /* PrototypeViewController.swift in Sources */,

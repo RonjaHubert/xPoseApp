@@ -34,6 +34,7 @@ class HomeViewController: UIViewController, SideMenuViewControllerDelegate {
         contentViews.forEach { view in
             view.layer.cornerRadius = 20
             view.clipsToBounds = false
+            
             view.layer.shadowColor = UIColor(named: "xPose Shadow Color")?.cgColor
             view.layer.shadowOpacity = 0.3
             view.layer.shadowOffset = .init(width: .zero, height: 6.5)

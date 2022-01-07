@@ -7,36 +7,54 @@
 
 import UIKit
 
-class TrainingViewController: UIViewController {
+class TrainingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet var contentViews: [UIView]!
+    @IBOutlet var tableView: UITableView!
     
-    // delete if dark mode button is removed
-    @IBAction func darkModePressed(_ sender: UIButton) {
-        if(overrideUserInterfaceStyle == .dark) {
-            overrideUserInterfaceStyle = .light
-        } else if(overrideUserInterfaceStyle == .light){
-            overrideUserInterfaceStyle = .light
-        }
-    }
+    let cells = [
+        TrainingCell(cellText: "Training ohne Geräte",
+                     cellImage: UIImage(named: "yogaImage")),
+        TrainingCell(cellText: "Training mit Geräten",
+                     cellImage: UIImage(named: "yogaImage")),
+        TrainingCell(cellText: "Training mit der Schwingungsplattform",
+                     cellImage: UIImage(named: "yogaImage"))
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // make sure back button is hidden
         navigationItem.hidesBackButton = true
         
-        contentViews.forEach { view in
-            view.layer.cornerRadius = 20
-            view.clipsToBounds = false
-            view.layer.shadowColor = UIColor(named: "xPose Shadow Color")?.cgColor
-            view.layer.shadowOpacity = 0.3
-            view.layer.shadowOffset = .init(width: .zero, height: 6.5)
-            view.layer.shadowRadius = 10
-        }
-        // Do any additional setup after loading the view.
+        // load custom cell
+        let nib = UINib(nibName: "TrainingTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "TrainingTableViewCell")
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // amount of categories inside table view
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // amount of cells
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TrainingTableViewCell", for: indexPath) as! TrainingTableViewCell
+        cell.cellLabel.text = cells[indexPath.row].cellText
+        cell.cellImageView.image = cells[indexPath.row].cellImage
+        return cell
+    }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let currentImage = cells[indexPath.row].cellImage
+        let imageCrop = currentImage!.getCropRatio()
+        return tableView.frame.width / imageCrop
+    }
     /*
     // MARK: - Navigation
 
@@ -47,4 +65,16 @@ class TrainingViewController: UIViewController {
     }
     */
 
+}
+
+extension UIImage {
+    func getCropRatio() -> CGFloat {
+        let widthRatio = CGFloat(self.size.width / self.size.height)
+        return widthRatio
+    }
+}
+
+struct TrainingCell {
+    let cellText: String!
+    let cellImage: UIImage!
 }

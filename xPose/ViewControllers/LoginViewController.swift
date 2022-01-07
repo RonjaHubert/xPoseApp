@@ -14,16 +14,23 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var saveAccountCheckbox: UIButton!
     
     @IBOutlet weak var failedLabel: UILabel!
+    
+    var isPasswordSaved:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // error message for wrong account information
         failedLabel.isHidden = true
+        
+        // button to toggle password visibility
         initToggleButton()
 
         // set Header Attributes
+        // TODO: fix custom class avoiding following definitions
         headerBackground.clipsToBounds = false
         headerBackground.layer.cornerRadius = 35
         headerBackground.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
@@ -39,7 +46,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    // test feature
+    // test login feature
     @IBAction func checkPlaceholderPassword(_ sender: UIButton) {
         if (emailText.text == "admin@xcode.de" && passwordText.text == "admin") {
             performSegue(withIdentifier: "login", sender: self)
@@ -68,6 +75,17 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func saveAccountPressed(_ sender: UIButton) {
+        
+        if (isPasswordSaved == false) {
+            isPasswordSaved = true
+            sender.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+        } else if (isPasswordSaved == true) {
+            isPasswordSaved = false
+            sender.setImage(UIImage(systemName: "square"), for: .normal)
+        }
+        
+    }
     /*
     // MARK: - Navigation
 
