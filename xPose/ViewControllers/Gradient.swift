@@ -15,6 +15,8 @@ final class Gradient: UIView {
     
     override func draw(_ rect: CGRect) {
         
+        //comment
+        
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = self.bounds
         gradient.colors = [firstColor.cgColor, secondColor.cgColor]

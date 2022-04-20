@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
 
         // set Header Attributes
         // TODO: fix custom class avoiding following definitions
-        headerBackground.clipsToBounds = false
+        headerBackground.clipsToBounds = true
         headerBackground.layer.cornerRadius = 35
         headerBackground.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         

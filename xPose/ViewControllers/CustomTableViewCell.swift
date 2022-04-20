@@ -8,7 +8,7 @@
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
-
+    
     @IBOutlet var cellTitle: UILabel!
     @IBOutlet var cellDescription: UILabel!
     
@@ -35,6 +35,7 @@ class CustomTableViewCell: UITableViewCell {
         super.layoutSubviews()
 
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 15, left: 0, bottom: 15, right: 0))
+        
     }
     
 }

@@ -22,6 +22,10 @@
 		20AFB4672785F80900478E11 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AFB4662785F80900478E11 /* Gradient.swift */; };
 		20AFB46A27870A5400478E11 /* TrainingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AFB46827870A5400478E11 /* TrainingTableViewCell.swift */; };
 		20AFB46B27870A5400478E11 /* TrainingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AFB46927870A5400478E11 /* TrainingTableViewCell.xib */; };
+		20B9719C2804483C005F8986 /* SchwingungTrainingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B9719B2804483C005F8986 /* SchwingungTrainingTableViewController.swift */; };
+		20B971A228049115005F8986 /* UtilityTrainingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B971A128049115005F8986 /* UtilityTrainingTableViewController.swift */; };
+		20B971A42804912A005F8986 /* VanillaTrainingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B971A32804912A005F8986 /* VanillaTrainingTableViewController.swift */; };
+		20B971A62810B93F005F8986 /* ViewControllers in Resources */ = {isa = PBXBuildFile; fileRef = 20B971A52810B93F005F8986 /* ViewControllers */; };
 		20C1179B27847F4600CFEAF4 /* BlogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1179A27847F4600CFEAF4 /* BlogTableViewController.swift */; };
 		20C1179E278483C300CFEAF4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1179C278483C300CFEAF4 /* CustomTableViewCell.swift */; };
 		20C1179F278483C300CFEAF4 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C1179D278483C300CFEAF4 /* CustomTableViewCell.xib */; };
@@ -47,6 +51,10 @@
 		20AFB4662785F80900478E11 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		20AFB46827870A5400478E11 /* TrainingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTableViewCell.swift; sourceTree = "<group>"; };
 		20AFB46927870A5400478E11 /* TrainingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingTableViewCell.xib; sourceTree = "<group>"; };
+		20B9719B2804483C005F8986 /* SchwingungTrainingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchwingungTrainingTableViewController.swift; sourceTree = "<group>"; };
+		20B971A128049115005F8986 /* UtilityTrainingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTrainingTableViewController.swift; sourceTree = "<group>"; };
+		20B971A32804912A005F8986 /* VanillaTrainingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanillaTrainingTableViewController.swift; sourceTree = "<group>"; };
+		20B971A52810B93F005F8986 /* ViewControllers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ViewControllers; sourceTree = "<group>"; };
 		20C1179A27847F4600CFEAF4 /* BlogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogTableViewController.swift; sourceTree = "<group>"; };
 		20C1179C278483C300CFEAF4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		20C1179D278483C300CFEAF4 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
@@ -100,6 +108,7 @@
 		20E822F0275A76D600A78944 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				20E140B52781EF720081D0FC /* ARController.swift */,
 				207AD580276257EB00AE8A92 /* HomeViewController.swift */,
 				207AD582276259B000AE8A92 /* SideMenuViewController.swift */,
 				20E822EE275A684100A78944 /* PhotoPickerController.swift */,
@@ -108,13 +117,16 @@
 				2017A5282767CBBC001E5A96 /* ProfileViewController.swift */,
 				2017A52C2767D16D001E5A96 /* MoodViewController.swift */,
 				209BFDB3277B54B10047B979 /* LoginViewController.swift */,
-				20E140B52781EF720081D0FC /* ARController.swift */,
 				20C1179A27847F4600CFEAF4 /* BlogTableViewController.swift */,
 				20AFB4662785F80900478E11 /* Gradient.swift */,
 				20C1179C278483C300CFEAF4 /* CustomTableViewCell.swift */,
-				20C1179D278483C300CFEAF4 /* CustomTableViewCell.xib */,
 				20AFB46827870A5400478E11 /* TrainingTableViewCell.swift */,
+				20B9719B2804483C005F8986 /* SchwingungTrainingTableViewController.swift */,
+				20B971A128049115005F8986 /* UtilityTrainingTableViewController.swift */,
+				20B971A32804912A005F8986 /* VanillaTrainingTableViewController.swift */,
+				20C1179D278483C300CFEAF4 /* CustomTableViewCell.xib */,
 				20AFB46927870A5400478E11 /* TrainingTableViewCell.xib */,
+				20B971A52810B93F005F8986 /* ViewControllers */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -182,6 +194,7 @@
 				20C1179F278483C300CFEAF4 /* CustomTableViewCell.xib in Resources */,
 				20AFB46B27870A5400478E11 /* TrainingTableViewCell.xib in Resources */,
 				2081A54D2742D7A6003FA955 /* Main.storyboard in Resources */,
+				20B971A62810B93F005F8986 /* ViewControllers in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,9 +211,12 @@
 				20AFB4672785F80900478E11 /* Gradient.swift in Sources */,
 				207AD581276257EB00AE8A92 /* HomeViewController.swift in Sources */,
 				20E822EF275A684100A78944 /* PhotoPickerController.swift in Sources */,
+				20B9719C2804483C005F8986 /* SchwingungTrainingTableViewController.swift in Sources */,
 				2017A52527676E62001E5A96 /* TrainingViewController.swift in Sources */,
 				2081A5462742D7A6003FA955 /* AppDelegate.swift in Sources */,
 				20C1179E278483C300CFEAF4 /* CustomTableViewCell.swift in Sources */,
+				20B971A228049115005F8986 /* UtilityTrainingTableViewController.swift in Sources */,
+				20B971A42804912A005F8986 /* VanillaTrainingTableViewController.swift in Sources */,
 				2081A5482742D7A6003FA955 /* SceneDelegate.swift in Sources */,
 				207AD583276259B000AE8A92 /* SideMenuViewController.swift in Sources */,
 				20AFB46A27870A5400478E11 /* TrainingTableViewCell.swift in Sources */,
