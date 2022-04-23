@@ -25,7 +25,6 @@
 		20B9719C2804483C005F8986 /* SchwingungTrainingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B9719B2804483C005F8986 /* SchwingungTrainingTableViewController.swift */; };
 		20B971A228049115005F8986 /* UtilityTrainingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B971A128049115005F8986 /* UtilityTrainingTableViewController.swift */; };
 		20B971A42804912A005F8986 /* VanillaTrainingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B971A32804912A005F8986 /* VanillaTrainingTableViewController.swift */; };
-		20B971A62810B93F005F8986 /* ViewControllers in Resources */ = {isa = PBXBuildFile; fileRef = 20B971A52810B93F005F8986 /* ViewControllers */; };
 		20B971A92811D2BD005F8986 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B971A82811D2BD005F8986 /* SQLiteDatabase.swift */; };
 		20B971AB2811DAF4005F8986 /* SQLiteCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B971AA2811DAF4005F8986 /* SQLiteCommands.swift */; };
 		20C1179B27847F4600CFEAF4 /* BlogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1179A27847F4600CFEAF4 /* BlogTableViewController.swift */; };
@@ -56,7 +55,6 @@
 		20B9719B2804483C005F8986 /* SchwingungTrainingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchwingungTrainingTableViewController.swift; sourceTree = "<group>"; };
 		20B971A128049115005F8986 /* UtilityTrainingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTrainingTableViewController.swift; sourceTree = "<group>"; };
 		20B971A32804912A005F8986 /* VanillaTrainingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanillaTrainingTableViewController.swift; sourceTree = "<group>"; };
-		20B971A52810B93F005F8986 /* ViewControllers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ViewControllers; sourceTree = "<group>"; };
 		20B971A82811D2BD005F8986 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
 		20B971AA2811DAF4005F8986 /* SQLiteCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteCommands.swift; sourceTree = "<group>"; };
 		20C1179A27847F4600CFEAF4 /* BlogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogTableViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				20B971A32804912A005F8986 /* VanillaTrainingTableViewController.swift */,
 				20C1179D278483C300CFEAF4 /* CustomTableViewCell.xib */,
 				20AFB46927870A5400478E11 /* TrainingTableViewCell.xib */,
-				20B971A52810B93F005F8986 /* ViewControllers */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -208,7 +205,6 @@
 				20C1179F278483C300CFEAF4 /* CustomTableViewCell.xib in Resources */,
 				20AFB46B27870A5400478E11 /* TrainingTableViewCell.xib in Resources */,
 				2081A54D2742D7A6003FA955 /* Main.storyboard in Resources */,
-				20B971A62810B93F005F8986 /* ViewControllers in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
