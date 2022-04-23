@@ -69,7 +69,7 @@ class LoginViewController: UIViewController {
             isPasswordSaved = false
             sender.setImage(UIImage(systemName: "square"), for: .normal)
         }
-        
+    
     }
     
     func checkPlaceholder() {
