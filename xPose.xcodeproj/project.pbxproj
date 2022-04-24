@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09334BA02815B54F0040979E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09334B9F2815B54F0040979E /* RegistrationViewController.swift */; };
 		2017A52527676E62001E5A96 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017A52427676E62001E5A96 /* TrainingViewController.swift */; };
 		2017A5292767CBBC001E5A96 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017A5282767CBBC001E5A96 /* ProfileViewController.swift */; };
 		2017A52D2767D16D001E5A96 /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017A52C2767D16D001E5A96 /* MoodViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09334B9F2815B54F0040979E /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		2017A52427676E62001E5A96 /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
 		2017A5282767CBBC001E5A96 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2017A52C2767D16D001E5A96 /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				20B971A32804912A005F8986 /* VanillaTrainingTableViewController.swift */,
 				20C1179D278483C300CFEAF4 /* CustomTableViewCell.xib */,
 				20AFB46927870A5400478E11 /* TrainingTableViewCell.xib */,
+				09334B9F2815B54F0040979E /* RegistrationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				20AFB46A27870A5400478E11 /* TrainingTableViewCell.swift in Sources */,
 				20C1179B27847F4600CFEAF4 /* BlogTableViewController.swift in Sources */,
 				2017A5292767CBBC001E5A96 /* ProfileViewController.swift in Sources */,
+				09334BA02815B54F0040979E /* RegistrationViewController.swift in Sources */,
 				20682D3C2762B3B400E97223 /* PrototypeViewController.swift in Sources */,
 				20B971AB2811DAF4005F8986 /* SQLiteCommands.swift in Sources */,
 			);
@@ -383,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4976633R2W;
+				DEVELOPMENT_TEAM = 4W82H2D42L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = xPose/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = xPose;
@@ -414,7 +418,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4976633R2W;
+				DEVELOPMENT_TEAM = 4W82H2D42L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = xPose/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = xPose;
