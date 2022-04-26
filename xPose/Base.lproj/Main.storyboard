@@ -639,12 +639,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0G-me-upt">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0G-me-upt" customClass="Gradient" customModule="xPose" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                                 <color key="backgroundColor" name="xPose Header Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="Men-04-P7d"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                        <color key="value" name="xPose Gradient Start Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                        <color key="value" name="xPose Gradient End Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="sxu-cC-hCR" customClass="Profil">
                                 <rect key="frame" x="87" y="136" width="240" height="240"/>
@@ -661,7 +669,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Profilbild ändern">
-                                    <color key="baseForegroundColor" name="xPose Tint Color"/>
+                                    <color key="baseForegroundColor" name="xPose Font Color"/>
                                 </buttonConfiguration>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFK-fn-0kK">
@@ -676,13 +684,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benutzername:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HA-85-5eT">
                                                         <rect key="frame" x="0.0" y="0.0" width="115.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" name="xPose Font Color"/>
+                                                        <color key="textColor" name="xPose Item Font"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Muster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rF-3B-dYD">
                                                         <rect key="frame" x="204.5" y="0.0" width="89.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" name="xPose Tint Color"/>
+                                                        <color key="textColor" name="xPose Font"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -693,13 +701,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXr-B3-g4p">
                                                         <rect key="frame" x="0.0" y="0.0" width="53" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" name="xPose Font Color"/>
+                                                        <color key="textColor" name="xPose Item Font"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="maxmuster@muster.de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kff-8b-iy5">
                                                         <rect key="frame" x="118" y="0.0" width="176" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" name="xPose Tint Color"/>
+                                                        <color key="textColor" name="xPose Font"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -710,13 +718,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benutzername:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxx-Dt-p7C">
                                                         <rect key="frame" x="0.0" y="0.0" width="115.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" name="xPose Font Color"/>
+                                                        <color key="textColor" name="xPose Item Font"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MaxMuster" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjl-5l-6fF">
                                                         <rect key="frame" x="208.5" y="0.0" width="85.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" name="xPose Tint Color"/>
+                                                        <color key="textColor" name="xPose Font"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -727,13 +735,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Größe:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsT-Bc-phY">
                                                         <rect key="frame" x="0.0" y="0.0" width="52" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" name="xPose Font Color"/>
+                                                        <color key="textColor" name="xPose Item Font"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,85 cm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpf-vc-JjP">
                                                         <rect key="frame" x="234.5" y="0.0" width="59.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" name="xPose Tint Color"/>
+                                                        <color key="textColor" name="xPose Font"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -744,13 +752,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gewicht:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tap-qV-e6f">
                                                         <rect key="frame" x="0.0" y="0.0" width="67.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" name="xPose Font Color"/>
+                                                        <color key="textColor" name="xPose Item Font"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="85 kg" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2h6-ja-E8d">
                                                         <rect key="frame" x="250.5" y="0.0" width="43.5" height="44"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" name="xPose Tint Color"/>
+                                                        <color key="textColor" name="xPose Font"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -758,7 +766,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" name="xPose Secondary Background Color"/>
+                                <color key="backgroundColor" name="xPose Item Background"/>
                                 <constraints>
                                     <constraint firstItem="dJU-m7-R1M" firstAttribute="top" secondItem="sFK-fn-0kK" secondAttribute="top" constant="20" id="GPc-9E-jPu"/>
                                     <constraint firstAttribute="height" constant="300" id="Ivc-n4-FnJ"/>
@@ -1227,12 +1235,12 @@
                                 <rect key="frame" x="30" y="210" width="354" height="552"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lQ7-fv-hiR">
-                                        <rect key="frame" x="30" y="30" width="294" height="304"/>
+                                        <rect key="frame" x="30" y="30" width="294" height="250"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vorname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3q-0u-RM3">
                                                 <rect key="frame" x="20" y="0.0" width="254" height="34"/>
                                                 <color key="backgroundColor" name="xPose TextField Color"/>
-                                                <color key="tintColor" name="xPose Tint Color"/>
+                                                <color key="tintColor" name="xPose Button Color"/>
                                                 <color key="textColor" name="xPose Font Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1240,7 +1248,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nachname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nh3-fi-oU4">
                                                 <rect key="frame" x="20" y="54" width="254" height="34"/>
                                                 <color key="backgroundColor" name="xPose TextField Color"/>
-                                                <color key="tintColor" name="xPose Tint Color"/>
+                                                <color key="tintColor" name="xPose Button Color"/>
                                                 <color key="textColor" name="xPose Font Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1248,7 +1256,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Geschlecht" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dz-Hp-lYD">
                                                 <rect key="frame" x="20" y="108" width="254" height="34"/>
                                                 <color key="backgroundColor" name="xPose TextField Color"/>
-                                                <color key="tintColor" name="xPose Tint Color"/>
+                                                <color key="tintColor" name="xPose Button Color"/>
                                                 <color key="textColor" name="xPose Font Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1259,7 +1267,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdi-iV-Qa5">
                                                         <rect key="frame" x="0.0" y="0.0" width="78" height="34"/>
                                                         <color key="backgroundColor" name="xPose TextField Color"/>
-                                                        <color key="tintColor" name="xPose Tint Color"/>
+                                                        <color key="tintColor" name="xPose Button Color"/>
                                                         <color key="textColor" name="xPose Font Color"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1267,7 +1275,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYc-OB-ENV">
                                                         <rect key="frame" x="88" y="0.0" width="78" height="34"/>
                                                         <color key="backgroundColor" name="xPose TextField Color"/>
-                                                        <color key="tintColor" name="xPose Tint Color"/>
+                                                        <color key="tintColor" name="xPose Button Color"/>
                                                         <color key="textColor" name="xPose Font Color"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1275,7 +1283,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TpY-WS-ULl">
                                                         <rect key="frame" x="176" y="0.0" width="78" height="34"/>
                                                         <color key="backgroundColor" name="xPose TextField Color"/>
-                                                        <color key="tintColor" name="xPose Tint Color"/>
+                                                        <color key="tintColor" name="xPose Button Color"/>
                                                         <color key="textColor" name="xPose Font Color"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1285,15 +1293,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MB5-rh-Jb2">
                                                 <rect key="frame" x="20" y="216" width="254" height="34"/>
                                                 <color key="backgroundColor" name="xPose TextField Color"/>
-                                                <color key="tintColor" name="xPose Tint Color"/>
-                                                <color key="textColor" name="xPose Font Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="05P-WJ-uae">
-                                                <rect key="frame" x="20" y="270" width="254" height="34"/>
-                                                <color key="backgroundColor" name="xPose TextField Color"/>
-                                                <color key="tintColor" name="xPose Tint Color"/>
+                                                <color key="tintColor" name="xPose Button Color"/>
                                                 <color key="textColor" name="xPose Font Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1305,33 +1305,37 @@
                                             <constraint firstItem="VZd-1e-wiC" firstAttribute="leading" secondItem="lQ7-fv-hiR" secondAttribute="leading" constant="20" id="NeH-QF-IkO"/>
                                             <constraint firstItem="g3q-0u-RM3" firstAttribute="leading" secondItem="lQ7-fv-hiR" secondAttribute="leading" constant="20" id="V5y-A8-kz4"/>
                                             <constraint firstItem="MB5-rh-Jb2" firstAttribute="leading" secondItem="lQ7-fv-hiR" secondAttribute="leading" constant="20" id="Y2R-fs-gdX"/>
-                                            <constraint firstAttribute="trailing" secondItem="05P-WJ-uae" secondAttribute="trailing" constant="20" id="YnF-3k-DVR"/>
                                             <constraint firstItem="4dz-Hp-lYD" firstAttribute="leading" secondItem="lQ7-fv-hiR" secondAttribute="leading" constant="20" id="cEZ-zT-2Rv"/>
                                             <constraint firstAttribute="trailing" secondItem="MB5-rh-Jb2" secondAttribute="trailing" constant="20" id="hD9-oD-FtD"/>
-                                            <constraint firstItem="05P-WJ-uae" firstAttribute="leading" secondItem="lQ7-fv-hiR" secondAttribute="leading" constant="20" id="ilc-7p-US1"/>
                                             <constraint firstAttribute="trailing" secondItem="g3q-0u-RM3" secondAttribute="trailing" constant="20" id="lPH-EG-UL7"/>
                                             <constraint firstAttribute="trailing" secondItem="nh3-fi-oU4" secondAttribute="trailing" constant="20" id="nBE-6s-Uo9"/>
                                             <constraint firstAttribute="trailing" secondItem="VZd-1e-wiC" secondAttribute="trailing" constant="20" id="x3A-Pq-mCc"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXm-L3-9qG">
-                                        <rect key="frame" x="126" y="502" width="102" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="102" id="Pdn-KO-dEb"/>
-                                            <constraint firstAttribute="height" constant="30" id="kJF-21-6KO"/>
-                                        </constraints>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xm0-FD-AOy">
+                                        <rect key="frame" x="51" y="299" width="253" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="xPose TextField Color"/>
+                                        <color key="tintColor" name="xPose Button Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort bestätigen" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m07-eA-D7K">
+                                        <rect key="frame" x="51" y="354" width="253" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="xPose TextField Color"/>
+                                        <color key="tintColor" name="xPose Button Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXm-L3-9qG">
+                                        <rect key="frame" x="115" y="499" width="124" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Registrieren">
                                             <color key="baseForegroundColor" name="xPose Button Font Color"/>
                                             <color key="baseBackgroundColor" name="xPose Button Color"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUy-bs-oag">
-                                        <rect key="frame" x="82" y="342" width="222" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" name="xPose Secondary Background Color"/>
                                 <constraints>
@@ -1912,13 +1916,16 @@
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <image name="square" catalog="system" width="128" height="114"/>
         <namedColor name="xPose Background Color">
-            <color red="0.92156862745098034" green="0.92158359290000003" blue="0.92158359290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="xPose Button Color">
-            <color red="0.0" green="0.77874070409999996" blue="0.39229547980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.58431372549019611" green="0.75686274509803919" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="xPose Button Font Color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Font">
+            <color red="0.58431372549019611" green="0.75686274509803919" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="xPose Font Color">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1934,6 +1941,12 @@
         </namedColor>
         <namedColor name="xPose Header Font Color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Item Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xPose Item Font">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="xPose Navigation Items Color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
