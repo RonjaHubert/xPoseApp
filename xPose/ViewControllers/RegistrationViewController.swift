@@ -19,7 +19,25 @@ class RegistrationViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+   /* // button at the right side of the password textfield
+    func initToggleButton() {
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: ((passwordText.frame.height) * 0.7), height: ((passwordText.frame.height) * 0.7)))
+        button.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+        //button.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 3)
+        button.tintColor = UIColor(named: "xPose Tint Color")
+        button.addTarget(self, action: #selector(togglePassword), for: .touchUpInside)
+        passwordText.rightViewMode = .always
+        passwordText.rightView = button
+    }
+    
+    @objc func togglePassword() {
+        if (passwordText.isSecureTextEntry) {
+            passwordText.isSecureTextEntry = false
+        } else if (!passwordText.isSecureTextEntry) {
+            passwordText.isSecureTextEntry = true
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -29,5 +47,6 @@ class RegistrationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    */
 }
+
